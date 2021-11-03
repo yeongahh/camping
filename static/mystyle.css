@@ -1,0 +1,42 @@
+body {
+    background-color: #606774;
+    min-height: 100vh;
+		padding-top: 3.25rem;
+}
+
+.section {
+    padding: 1rem 1.5rem;
+    max-width: 750px;
+    margin: auto;
+}
+
+.is-camping {
+    color: #BDBBFF !important;
+}
+
+.button.is-camping {
+    background-color: #BDBBFF;
+    border-color: transparent;
+    color: #fff !important;
+}
+
+.button.is-camping.is-outlined {
+    background-color: transparent;
+    border-color: #BDBBFF;
+    color: #BDBBFF !important;
+}
+
+.modal-content {
+    width: 600px;
+    max-width: 80%;
+}
+
+input::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+.image img {
+    object-fit:cover;
+    width:100%;
+    height:100%;
+}

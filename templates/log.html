@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>index</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href='{{ url_for("static", filename="mystyle.css") }}' rel="stylesheet">
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+    <style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+
+    <script>
+
+        function openClose() {
+            if ($("#post-box").css("display") == "block") {
+                $("#post-box").hide();
+                $("#btn-post-box").text("포스팅 박스 열기");
+            } else {
+                $("#post-box").show();
+                $("#btn-post-box").text("포스팅 박스 닫기");
+            }
+        }
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+<div class="wrap">
+    <div class="banner" onclick="window.location.href='/'">
+    </div>
+    <h1> 로그 작성</h1>
+    <button onclick="openClose()" id="btn-post-box" type="button" class="btn btn-primary">포스팅 박스 열기
+            </button>
+    <div>
+        <div class="posting-box" id="post-box">
+            <div class="custom-file">
+                <input type="file" accept="video/*, image/*" class="custom-file-input" id="file">
+                <label class="custom-file-label" for="file" method="POST"
+                       enctype="multipart/form-data">사이트뷰를 선택하세요!</label>
+            </div>
+
+            <div>
+                   <div>
+                    <a class="star_letter">청결</a>
+                    <p class="star_rating">
+                        <a href="#">★</a>
+                        <a href="#">★</a>
+                        <a href="#">★</a>
+                        <a href="#">★</a>
+                        <a href="#">★</a>
+                    </p>
+                </div>
+
+                <div>
+                    <a class="star_letter">청결</a>
+                    <p class="star_rating">
+                        <a href="#">★</a>
+                        <a href="#">★</a>
+                        <a href="#">★</a>
+                        <a href="#">★</a>
+                        <a href="#">★</a>
+                    </p>
+                </div>
+                <div>
+                    <a class="star_letter">청결</a>
+                    <p class="star_rating">
+                        <a href="#">★</a>
+                        <a href="#">★</a>
+                        <a href="#">★</a>
+                        <a href="#">★</a>
+                        <a href="#">★</a>
+                    </p>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" id="content" rows="3" placeholder="내용 입력"></textarea>
+                </div>
+                <button onclick="posting()" type="button" class="btn btn-info">저장하기</button>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+</div>
+</body>
+
+
+
+</html>
